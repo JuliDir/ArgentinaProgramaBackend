@@ -20,7 +20,7 @@ import java.util.List;
  */
 
 @RestController
-@RequestMapping("/experiencia")
+@RequestMapping("/api/experiencia")
 public class ExperienciaController {
     private final ExperienciaService experienciaService;
 

@@ -18,7 +18,7 @@ import java.util.List;
  * @author InfoSoporte
  */
 @RestController
-@RequestMapping("/educacion")
+@RequestMapping("/api/educacion")
 public class EducacionController {
     private final EducacionService educacionService;
 

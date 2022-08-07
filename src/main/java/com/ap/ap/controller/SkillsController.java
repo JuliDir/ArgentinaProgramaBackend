@@ -19,7 +19,7 @@ import java.util.List;
  * @author InfoSoporte
  */
 @RestController
-@RequestMapping("/skills")
+@RequestMapping("/api/skills")
 public class SkillsController {
     private final SkillsService skillsService;
 
