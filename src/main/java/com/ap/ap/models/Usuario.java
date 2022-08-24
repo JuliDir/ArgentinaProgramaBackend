@@ -30,7 +30,9 @@ public class Usuario implements Serializable {
     private String apellido;
     private String titulo; 
     private String descripcion; 
-    private String fotoPerfil; 
+    private String fotoPerfil;
+
+    private String subTitulo;
     
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "idEdu")
     private List<Educacion> educacionList; 
@@ -42,13 +44,14 @@ public class Usuario implements Serializable {
     public Usuario(){
     }
 
-    public Usuario(Long id, String nombre, String apellido, String titulo, String descripcion, String fotoPerfil) {
+    public Usuario(Long id, String nombre, String apellido, String titulo, String descripcion, String fotoPerfil, String subTitulo) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.fotoPerfil = fotoPerfil;
+        this.subTitulo = subTitulo;
     }
 
     public long getId() {
@@ -98,7 +101,12 @@ public class Usuario implements Serializable {
     public void setFotoPerfil(String fotoPerfil) {
         this.fotoPerfil = fotoPerfil;
     }
-    
-    
 
+    public String getSubTitulo() {
+        return subTitulo;
+    }
+
+    public void setSubTitulo(String subTitulo) {
+        this.subTitulo = subTitulo;
+    }
 }
