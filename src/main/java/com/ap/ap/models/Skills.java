@@ -28,7 +28,7 @@ public class Skills {
     public Skills(Long idSkills, String nombreSkill, int porcentaje) {
         this.idSkills = idSkills;
         this.nombreSkill = nombreSkill;
-        this.porcentajeSkill = porcentajeSkill;
+        this.porcentajeSkill = porcentaje;
     }
 
     public long getIdSkill() {
